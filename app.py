@@ -1,3 +1,10 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/", methods=["GET"])
+def home():
+    return "Wassim IA est en ligne ! Utilise /chat pour parler."
 from flask import Flask, request, jsonify
 from openai import OpenAI
 
