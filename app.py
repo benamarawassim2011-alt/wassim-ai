@@ -35,3 +35,16 @@ def chat():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))  # Render fournit le PORT automatiquement
     app.run(host="0.0.0.0", port=port)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat avec Wassim IA</title>
+</head>
+<body>
+    <h1>Wassim IA Chat</h1>
+    <form action="/chat" method="post">
+        <input type="text" name="message" placeholder="Écris ton message ici" required>
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
